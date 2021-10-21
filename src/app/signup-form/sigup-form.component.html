@@ -1,0 +1,41 @@
+<br>
+<div class="signup">
+<form #userSignUp ="ngForm" (ngSubmit) ="onClickSubmit(userSignUp.value)">
+    <div class="form-item">
+        <div class="custom-input">
+            <div class="icon-wrapper-icon">
+                <div class="input-wrapper">
+                    <input type="tel" name="phone" id="phone" placeholder="Your Phonenumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="12" required/>
+
+                </div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="form-item">
+        <div class="custom-input">
+            <div class="icon-wrapper">
+                <div class="input-wrapper">
+                    <input type="email" name="email" id="email" placeholder="Email" required/>
+                </div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="form-item">
+        <div  class="form-item">
+            <div class="icon-wrapper">
+                <div class="input-wrapper">
+                    <input type="password" name="password" id="password" placeholder="Your Password" required/>
+                </div>
+                <i class="fa fa-lock"></i>
+            </div>
+        </div>
+    </div>
+    <div class="form-item clearfix">
+        <button class="createAccount" type="button">
+            Create An Account
+        </button>
+    </div>
+</form>
+</div>
